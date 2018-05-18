@@ -1,0 +1,62 @@
+\begin{thebibliography}{10}
+
+\bibitem{Andersen2006}
+Torben~G Andersen, Tim Bollerslev, Peter~F Christoffersen, and Francis~X
+  Diebold.
+\newblock Volatility and correlation forecasting.
+\newblock {\em Handbook of economic forecasting}, 1:777--878, 2006.
+
+\bibitem{Bollerslev1986}
+Tim Bollerslev.
+\newblock Generalized autoregressive conditional heteroskedasticity.
+\newblock {\em Journal of econometrics}, 31(3):307--327, 1986.
+
+\bibitem{Engle1982}
+Robert Engle.
+\newblock Autoregressive conditional heteroscedasticity with estimates of the
+  variance of united kingdom inflation.
+\newblock {\em Econometrica}, 50(4):987--1007, 1982.
+
+\bibitem{EngleNobel}
+Robert Engle.
+\newblock Risk and volatility: Econometric models and financial practice.
+\newblock December 2003.
+
+\bibitem{Hamilton1994}
+{James Douglas} Hamilton.
+\newblock {\em Time series analysis}.
+\newblock Princeton Univ. Press, Princeton, NJ, 1994.
+
+\bibitem{Mandelbrot1963}
+Benoît Mandelbrot.
+\newblock The variation of certain speculative prices.
+\newblock {\em The Journal of Business}, 36, 1963.
+
+\bibitem{Politis2007}
+Dimitris~N. Politis.
+\newblock Model-free versus model-based volatility prediction.
+\newblock {\em Journal of Financial Econometrics}, 5(3):358, 2007.
+
+\bibitem{PolitisMonograph2013}
+Dimitris~N Politis.
+\newblock Model-free model-fitting and predictive distributions.
+\newblock {\em Test}, 22(2):183--221, 2013.
+
+\bibitem{Politis2015}
+Dimitris~N Politis.
+\newblock {\em Model-Free Prediction and Regression: A Transformation-Based
+  Approach to Inference}.
+\newblock Springer, 2015.
+
+\bibitem{Politis2012}
+Dimitris~N. Politis and Dimitrios~D. Thomakos.
+\newblock {\em NoVaS Transformations: Flexible Inference for Volatility
+  Forecasting}, pages 489--525.
+\newblock Springer New York, New York, NY, 2013.
+
+\bibitem{PoonGranger2003}
+Ser-Huang Poon and Clive~W.J. Granger.
+\newblock Forecasting volatility in financial markets: A review.
+\newblock {\em Journal of Economic Literature}, 41(2):478--539, June 2003.
+
+\end{thebibliography}
