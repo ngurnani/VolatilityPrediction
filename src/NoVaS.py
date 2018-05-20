@@ -26,6 +26,10 @@ def simple_novas(x):
 def exponential_novas(x):
 	pass
 
+def main():
+	pass
+
+if __name__ == "__main__": main()
 
 
 
