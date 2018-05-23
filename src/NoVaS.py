@@ -13,10 +13,32 @@ import matplotlib.pyplot as plt
 from scipy.stats import kurtosis
 
 def simple_novas(returns, p):
-	a = (np.ones(p+1))/(p+1)
-	squared_returns = returns**2
-	denominator = math.sqrt(np.dot(a, squared_returns.tail(p+1)[::-1]))	
-	return np.divide(sp500_returns, denominator)
+    """
+    Function performs NoVaS (normalizing and variance stabilizing transformation) on financial returns series
+    as outlined in Politis (2007)
+    
+    input:
+        returns - daily financial returns
+        p - lag parameter (first p-1 entries of o)
+    output:
+        W_t - NoVaS transformed series
+    """
+    
+    n = len(returns)
+    X_t = np.zeros(2*p+n) # placeholder vector containing returns upto period t
+    X_t[2*p:2*p+n] = returns
+    X_t = pd.Series(X_t)
+    
+    # to calculate denominator term, sum lag p squared returns
+    lagged_squared_returns = pd.Series(np.zeros(len(X_t))) 
+    for i in range(p):
+        lagged_squared_returns = lagged_squared_returns + (X_t**2).shift(-i)
+    
+    W_t = X_t/np.sqrt(lagged_squared_returns/p)
+    W_t = W_t[2*p:2*p+n] # drop extra lag indices in array
+    W_t = W_t.dropna() # drop any nan values
+    return W_t
+
 
 def exponential_novas(x):
 	pass
