@@ -15,6 +15,10 @@ import statsmodels.api as sm
 from statsmodels.stats.stattools import jarque_bera
 import matplotlib.pyplot as plt
 
+
+
+######### SELF GARCH IMPLEMENTATION #####################
+
 def compute_squared_sigmas(X, initial_sigma, theta):
 	"""Function to compute the sigmas given the initial guess"""
 
@@ -78,6 +82,42 @@ def garch11(X,theta):
 	theta_mle = result.x
 	return theta_mle
 
-def prediction_interval():
-	pass
+############## L1 GARCH PREDICTION #############
+def arch_p(C, A, B, returns, p):
+    """returns sigma^2 term in ARCH(p) model using coefficients from fitted GARCH(1,1) model """
 
+    squared_returns = returns**2
+    lagged_squared_returns = squared_returns.iloc[-p:] # return last p elements of series
+    lagged_squared_returns = lagged_squared_returns[::-1] # reverse the ordering of them
+
+    a = C/(1-B)
+    a_i = [A*B**(i-1) for i in range(1,p+1)]
+
+    ans = a + np.dot(a_i,lagged_squared_returns)
+    return ans
+
+def garch_forecast(C, A, B, returns, dist='Normal'):
+    """ L1 forecast for GARCH models
+    input:
+    C - constant term in GARCH model
+    A - coeff for Y_n^2 term in GARCH model
+    B - coeff for sigma_n^2 term in GARCH model
+    """
+    
+    n = len(returns)
+    p = int(n/2)
+    
+    # sigma^2 term in arch(p) model
+    arch_p_term = arch_p(C, A, B, returns, p)
+    
+    # calculate median of error term squared
+    if dist.lower()=='normal':
+        Zn2 = 0.45
+    elif dist.lower()=='t':
+        Zn2 = 0.53
+    else:
+        print("Invalid distribution entered, only 'normal' or 't' allowed")
+        return None
+    
+    forecast = arch_p_term * Zn2
+    return forecast
