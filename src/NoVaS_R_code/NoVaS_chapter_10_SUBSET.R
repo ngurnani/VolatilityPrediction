@@ -1,5 +1,11 @@
 # Contains subset of useful functions from NoVaS_chapter_10.R
 
+### code to load in S&P500 returns data ###
+setwd("~/Dropbox/Code/VolatilityPrediction/src/NoVaS_R_code")
+sp500 <- read.table("sp500returns.csv", header=F, sep=',')
+xx <- sp500$V2
+xx <- (xx - mean(xx, na.rm = T))/sd(xx, na.rm = T)
+
 ########### one step ahead prediction by NoVaS simple ########
 VARSTABdp_pred<-function(xx, p, alp)
 { # xx is financial returns series (percentage returns)
