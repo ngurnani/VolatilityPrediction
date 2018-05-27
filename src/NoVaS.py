@@ -81,6 +81,52 @@ def simple_novas_prediction(returns, p):
     
     return predictor
 
+def real_vol_estimate(returns, p):
+    
+    """
+    
+    function calculates the realized volatility estimate in case I of NoVaS transform where the transformed
+    variables are uncorrelated and independent.
+    
+    input:
+        returns - daily financial returns
+        p - lag parameter (first p-1 entries)
+        
+    output:
+        real_vol_forecast - forecast of conditional variance
+    
+    """
+    
+    ## NoVaS transform
+    
+    n = len(returns)
+    X_t = np.zeros(2*p+n) # placeholder vector containing returns upto period t
+    X_t[2*p:2*p+n] = returns
+    X_t = pd.Series(X_t)
+    
+    # to calculate denominator term, sum lag p squared returns
+    lagged_squared_returns = pd.Series(np.zeros(len(X_t))) 
+    for i in range(p):
+        lagged_squared_returns = lagged_squared_returns + (X_t**2).shift(-i)
+    
+    W_t = X_t/np.sqrt(lagged_squared_returns/p)
+    W_t = W_t[2*p:2*p+n] # drop extra lag indices in array
+    W_t = W_t.dropna() # drop 
+    
+    # conditional variance forecast
+    
+    An2 = (lagged_squared_returns/p)
+    An2 = An2[2*p:2*p+n]
+    An2 = An2.dropna()
+    An2 = An2.iloc[-1]
+
+    a0 = 1/p
+    W2 = W_t**2/(1-a0*(W_t**2))
+    
+    sum_term = sum(W2[p+1:])
+    estimate = (An2/(n-p))*sum_term
+    
+    return estimate
 
 def exponential_novas(x):
 	pass
