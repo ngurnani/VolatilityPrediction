@@ -39,6 +39,10 @@ def simple_novas(returns, p):
     W_t = W_t.dropna() # drop any nan values
     return W_t
 
+def one_step_prediction(W_t):
+
+    
+
 
 def exponential_novas(x):
 	pass
