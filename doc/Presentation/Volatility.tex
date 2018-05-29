@@ -1,6 +1,7 @@
-% Wasserstein GAN - April 2017
+% Volatility Forecasting Project - MATH 287C Spring 2018
 % Nishant D. Gurnani
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass{beamer}
 \mode<presentation> {
 \usetheme{default}
@@ -17,15 +18,10 @@
 \newcommand{\seti}{\setcounter{saveenumi}{\value{enumi}}}
 \newcommand{\conti}{\setcounter{enumi}{\value{saveenumi}}}
 
-
-\input{Commands}
-% For citations
-\usepackage{natbib}
-
+\usepackage{natbib} % for citations
 \usepackage{graphicx}
 \usepackage{subfig}
 \usepackage{bm} 
-
 
 \newcounter{saveenumi}
 \newcommand{\seti}{\setcounter{saveenumi}{\value{enumi}}}
@@ -35,12 +31,13 @@
 
 %\setbeamerfont{institute}{size=\medium}
 \setbeamerfont{date}{size=\tiny}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-\title[]{A Case Study on Volatility in Financial Time Series}
-%
-\author{Nishant Gurnani}
+\title[]{Volatility in Financial Time Series}
+\author{MATH 287C - Advanced Time Series Analysis \\ Nishant Gurnani}
 \date{June 4th, 2018}
+
+
 
 \begin{document}
 
@@ -199,13 +196,6 @@ To train $g_{\theta}$ (and by extension $\P_{\theta}$), we need a measure of dis
 \textcolor{red}{\textbf{How do we define $d$?}}
 \end{center}
 
-\end{frame}
-
-% Different Distances
-\section{Different Distances}
-
-\begin{frame}
-\tableofcontents[currentsection]
 \end{frame}
 
 \begin{frame}
@@ -388,11 +378,6 @@ Let $\P$ be a distribution on a compact space $\chi$ and $(\P_{n})_{n \in \N}$ b
 \end{Theorem}
 \end{frame}
 
-% Standard GAN
-\section{Standard GAN}
-\begin{frame}
-\tableofcontents[currentsection]
-\end{frame}
 
 \begin{frame}
 \frametitle{Generative Adversarial Networks}
@@ -440,10 +425,6 @@ where $\P_{r}$ is the data distribution and $\P_{g}$ is the model distribution i
 \end{frame}
 
 
-\section{Wasserstein GAN}
-\begin{frame}
-\tableofcontents[currentsection]
-\end{frame}
 
 \begin{frame}
 \frametitle{Kantorivich-Rubinstein Duality}
@@ -549,11 +530,6 @@ where we constrain $D(x)$ to always be a probability $p \in (0,1)$}
 \end{itemize}
 \end{frame}
 
-% Improved WGAN
-\section{Improved Wasserstein GAN}
-\begin{frame}
-\tableofcontents[currentsection]
-\end{frame}
 
 \begin{frame}
 \frametitle{Properties of optimal WGAN critic}

@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.5.25)  26 MAY 2018 11:08
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.5.25)  29 MAY 2018 15:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Volatility.tex
-(./Volatility.tex
+**volatility.tex
+(./volatility.tex
 LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/beamer.cls
@@ -812,7 +812,7 @@ Package caption Info: Hyperref support is turned off
 \sympureletters=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 28.
+ut line 27.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
@@ -824,68 +824,72 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
 LaTeX Info: Redefining \bm on input line 203.
 )
 
-./Volatility.tex:30: LaTeX Error: Command \c@saveenumi already defined.
+./volatility.tex:28: LaTeX Error: Command \c@saveenumi already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.30 \newcounter{saveenumi}
+l.28 \newcounter{saveenumi}
                            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./Volatility.tex:31: LaTeX Error: Command \seti already defined.
+./volatility.tex:29: LaTeX Error: Command \seti already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.31 ...ti}{\setcounter{saveenumi}{\value{enumi}}}
+l.29 ...ti}{\setcounter{saveenumi}{\value{enumi}}}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./Volatility.tex:32: LaTeX Error: Command \conti already defined.
+./volatility.tex:30: LaTeX Error: Command \conti already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.32 ...ti}{\setcounter{enumi}{\value{saveenumi}}}
+l.30 ...ti}{\setcounter{enumi}{\value{saveenumi}}}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 39.
 
 
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
-Volatility.aux)
-\openout1 = `Volatility.aux'.
+volatility.aux)
+\openout1 = `volatility.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -923,7 +927,7 @@ LaTeX Font Info:    ... okay on input line 45.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 45.
+Package hyperref Info: Link coloring OFF on input line 44.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -933,71 +937,71 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count169
 )
-LaTeX Info: Redefining \ref on input line 45.
-LaTeX Info: Redefining \pageref on input line 45.
-LaTeX Info: Redefining \nameref on input line 45.
+LaTeX Info: Redefining \ref on input line 44.
+LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 44.
 
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
-Volatility.out)
+volatility.out)
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
-Volatility.out)
+volatility.out)
 \@outlinefile=\write5
-\openout5 = `Volatility.out'.
+\openout5 = `volatility.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 45.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 44.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 45.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 44.
 \symnumbers=\mathgroup11
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 45.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 44.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/cmss/m/it on input line 4
-5.
+4.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/bx/sl --> OT1/cmss/m/it on input line 
-45.
+44.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 45.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 45.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 44.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 45.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 45.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 45.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 44.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 45.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 45.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 45.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 44.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 45.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 45.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 44.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 45.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 44.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 45.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 45.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 45.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 45.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 45.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 44.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 45.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 45.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 44.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 44.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 4
-5.
+4.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-45.
+44.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 45.
+ut line 44.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -1023,7 +1027,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 45.
+LaTeX Info: Redefining \includegraphics on input line 44.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: Incompatible package detected (regarding \caption).
@@ -1041,16 +1045,16 @@ See the caption package documentation for explanation.
 Package caption Info: End \AtBeginDocument code.
 
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
-Volatility.nav)
+volatility.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 50.
+(Font)              size <5> substituted on input line 49.
 
 [1
 
 ]
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
-Volatility.toc
+volatility.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 4.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1070,24 +1074,24 @@ thkerncmss.
 
 ]
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
-Volatility.toc) [3
+volatility.toc) [3
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 67.
+(hyperref)                removing `math shift' on input line 66.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 67.
+(hyperref)                removing `subscript' on input line 66.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 67.
+(hyperref)                removing `superscript' on input line 66.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 67.
+(hyperref)                removing `math shift' on input line 66.
 
 [4
 
@@ -1110,28 +1114,28 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ] [13
 
 ]
-Overfull \hbox (59.0972pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.0972pt too wide) in paragraph at lines 155--155
 []  
  []
 
 [14
 
 ]
-Overfull \hbox (59.0972pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.0972pt too wide) in paragraph at lines 155--155
 []  
  []
 
 [15
 
 ]
-Overfull \hbox (59.0972pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.0972pt too wide) in paragraph at lines 155--155
 []  
  []
 
 [16
 
 ]
-Overfull \hbox (59.0972pt too wide) in paragraph at lines 156--156
+Overfull \hbox (59.0972pt too wide) in paragraph at lines 155--155
 []  
  []
 
@@ -1159,15 +1163,14 @@ Overfull \hbox (59.0972pt too wide) in paragraph at lines 156--156
 
 ] [28
 
-]
-(/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
-Volatility.toc) [29
+] [29
 
 ] [30
 
 ] [31
 
-] [32
+]
+[32
 
 ] [33
 
@@ -1185,8 +1188,7 @@ Volatility.toc) [29
 
 ] [40
 
-]
-[41
+] [41
 
 ] [42
 
@@ -1198,9 +1200,12 @@ Volatility.toc) [29
 
 ] [46
 
-] [47
+]
+[47
 
-] [48
+]
+File: parallel_lines.png Graphic file (type QTm)
+ <use  "parallel_lines.png" > [48
 
 ]
 File: parallel_lines.png Graphic file (type QTm)
@@ -1215,20 +1220,16 @@ File: parallel_lines.png Graphic file (type QTm)
 File: parallel_lines.png Graphic file (type QTm)
  <use  "parallel_lines.png" > [51
 
-]
-File: parallel_lines.png Graphic file (type QTm)
-
-<use  "parallel_lines.png" > [52
-
-] [53
-
-] [54
+] [52
 
 ]
-./Volatility.tex:360: Undefined control sequence.
+[53
+
+]
+./volatility.tex:352: Undefined control sequence.
 \beamer@doifinframe ...ibution of $g_{\theta }(\Z 
                                                   )$. Then, \begin {enumerat...
-l.360 \end{frame}
+l.352 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1236,13 +1237,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[55
+[54
+
+] [55
 
 ] [56
 
-]
-(/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
-Volatility.toc) [57
+] [57
 
 ] [58
 
@@ -1262,18 +1263,55 @@ Volatility.toc) [57
 
 ] [66
 
-]
-(/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
-Volatility.toc) [67
-
-] [68
-
-] [69
-
-] [70
+] [67
 
 ]
-Overfull \hbox (7.92186pt too wide) detected at line 484
+Overfull \hbox (7.92186pt too wide) detected at line 467
+[] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl/10.95 f[]\OT
+1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.95 )] \OMS/cms
+y/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl
+/10.95 f[]\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.9
+5 )] \OMS/cmsy/m/n/10.95 ^^T [] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/m
+athkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1
+/cmss/m/n/10.95 )] \OMS/cmsy/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10
+.95 [\OT1/mathkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/
+10.95 x\OT1/cmss/m/n/10.95 )]
+ []
+
+[68
+
+]
+Overfull \hbox (7.92186pt too wide) detected at line 467
+[] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl/10.95 f[]\OT
+1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.95 )] \OMS/cms
+y/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl
+/10.95 f[]\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.9
+5 )] \OMS/cmsy/m/n/10.95 ^^T [] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/m
+athkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1
+/cmss/m/n/10.95 )] \OMS/cmsy/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10
+.95 [\OT1/mathkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/
+10.95 x\OT1/cmss/m/n/10.95 )]
+ []
+
+[69
+
+]
+Overfull \hbox (7.92186pt too wide) detected at line 467
+[] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl/10.95 f[]\OT
+1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.95 )] \OMS/cms
+y/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl
+/10.95 f[]\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.9
+5 )] \OMS/cmsy/m/n/10.95 ^^T [] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/m
+athkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1
+/cmss/m/n/10.95 )] \OMS/cmsy/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10
+.95 [\OT1/mathkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/
+10.95 x\OT1/cmss/m/n/10.95 )]
+ []
+
+[70
+
+]
+Overfull \hbox (7.92186pt too wide) detected at line 467
 [] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl/10.95 f[]\OT
 1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.95 )] \OMS/cms
 y/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl
@@ -1288,7 +1326,7 @@ athkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1
 [71
 
 ]
-Overfull \hbox (7.92186pt too wide) detected at line 484
+Overfull \hbox (7.92186pt too wide) detected at line 467
 [] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl/10.95 f[]\OT
 1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.95 )] \OMS/cms
 y/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl
@@ -1303,7 +1341,7 @@ athkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1
 [72
 
 ]
-Overfull \hbox (7.92186pt too wide) detected at line 484
+Overfull \hbox (7.92186pt too wide) detected at line 467
 [] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl/10.95 f[]\OT
 1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.95 )] \OMS/cms
 y/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl
@@ -1317,50 +1355,11 @@ athkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1
 
 [73
 
-]
-Overfull \hbox (7.92186pt too wide) detected at line 484
-[] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl/10.95 f[]\OT
-1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.95 )] \OMS/cms
-y/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl
-/10.95 f[]\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.9
-5 )] \OMS/cmsy/m/n/10.95 ^^T [] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/m
-athkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1
-/cmss/m/n/10.95 )] \OMS/cmsy/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10
-.95 [\OT1/mathkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/
-10.95 x\OT1/cmss/m/n/10.95 )]
- []
+] [74
 
-[74
+] [75
 
-]
-Overfull \hbox (7.92186pt too wide) detected at line 484
-[] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl/10.95 f[]\OT
-1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.95 )] \OMS/cms
-y/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl
-/10.95 f[]\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.9
-5 )] \OMS/cmsy/m/n/10.95 ^^T [] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/m
-athkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1
-/cmss/m/n/10.95 )] \OMS/cmsy/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10
-.95 [\OT1/mathkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/
-10.95 x\OT1/cmss/m/n/10.95 )]
- []
-
-[75
-
-]
-Overfull \hbox (7.92186pt too wide) detected at line 484
-[] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl/10.95 f[]\OT
-1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.95 )] \OMS/cms
-y/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl
-/10.95 f[]\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.9
-5 )] \OMS/cmsy/m/n/10.95 ^^T [] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/m
-athkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1
-/cmss/m/n/10.95 )] \OMS/cmsy/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10
-.95 [\OT1/mathkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/
-10.95 x\OT1/cmss/m/n/10.95 )]
- []
-
-[76
+] [76
 
 ] [77
 
@@ -1374,20 +1373,20 @@ athkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1
 
 ] [82
 
-] [83
+]
+File: wgan.png Graphic file (type QTm)
+ <use  "wgan.png" >
+Overfull \hbox (21.51253pt too wide) in paragraph at lines 512--512
+ [] 
+ []
+
+[83
 
 ] [84
 
 ] [85
 
-]
-File: wgan.png Graphic file (type QTm)
- <use  "wgan.png" >
-Overfull \hbox (21.51253pt too wide) in paragraph at lines 529--529
- [] 
- []
-
-[86
+] [86
 
 ] [87
 
@@ -1401,9 +1400,7 @@ Overfull \hbox (21.51253pt too wide) in paragraph at lines 529--529
 
 ] [92
 
-]
-(/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
-Volatility.toc) [93
+] [93
 
 ] [94
 
@@ -1413,78 +1410,70 @@ Volatility.toc) [93
 
 ] [97
 
-] [98
-
-] [99
-
-] [100
-
-] [101
-
 ]
 File: penalty.png Graphic file (type QTm)
 
-<use  "penalty.png" > [102
+<use  "penalty.png" > [98
 
 ]
 File: penalty.png Graphic file (type QTm)
- <use  "penalty.png" > [103
+ <use  "penalty.png" > [99
 
 ]
 File: penalty.png Graphic file (type QTm)
  <use  "penalty.png" >
-[104
+[100
 
 ]
 File: penalty.png Graphic file (type QTm)
- <use  "penalty.png" > [105
+ <use  "penalty.png" > [101
 
 ]
 File: penalty.png Graphic file (type QTm)
- <use  "penalty.png" > [106
+ <use  "penalty.png" > [102
 
 ]
 File: i_wgan.png Graphic file (type QTm)
 
 <use  "i_wgan.png" >
-Overfull \hbox (21.51253pt too wide) in paragraph at lines 611--611
+Overfull \hbox (21.51253pt too wide) in paragraph at lines 589--589
  [] 
  []
 
-[107
+[103
 
 ]
 \tf@nav=\write6
-\openout6 = `Volatility.nav'.
+\openout6 = `volatility.nav'.
 
 \tf@toc=\write7
-\openout7 = `Volatility.toc'.
+\openout7 = `volatility.toc'.
 
 \tf@snm=\write8
-\openout8 = `Volatility.snm'.
+\openout8 = `volatility.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 613.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 613.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 591.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 591.
 
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
-Volatility.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 613.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 613.
+volatility.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 591.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 591.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 613.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 591.
  ) 
 Here is how much of TeX's memory you used:
- 21853 strings out of 493734
- 394950 string characters out of 6146348
- 454191 words of memory out of 5000000
- 24730 multiletter control sequences out of 15000+600000
+ 21826 strings out of 493734
+ 394059 string characters out of 6146348
+ 454346 words of memory out of 5000000
+ 24711 multiletter control sequences out of 15000+600000
  25410 words of font info for 80 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  56i,14n,55p,422b,649s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Present
-ation/.texpadtmp/Volatility.pdf (107 pages).
+ation/.texpadtmp/volatility.pdf (103 pages).

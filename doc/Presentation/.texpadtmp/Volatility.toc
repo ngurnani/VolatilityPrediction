@@ -3,7 +3,3 @@
 \beamer@sectionintoc {2}{Exploratory Data Analysis with NoVaS}{4}{0}{2}
 \beamer@sectionintoc {3}{Predicting $Y_{t}^2$ as a proxy for Volatility}{4}{0}{3}
 \beamer@sectionintoc {4}{A simple Volatility trading strategy}{4}{0}{4}
-\beamer@sectionintoc {5}{Different Distances}{29}{0}{5}
-\beamer@sectionintoc {6}{Standard GAN}{57}{0}{6}
-\beamer@sectionintoc {7}{Wasserstein GAN}{67}{0}{7}
-\beamer@sectionintoc {8}{Improved Wasserstein GAN}{93}{0}{8}
