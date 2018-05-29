@@ -1,0 +1,6 @@
+# Project specific
+.ipynb_checkpoints
+
+#pytest
+.cache
+.pytest_cache
