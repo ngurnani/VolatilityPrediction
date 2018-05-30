@@ -74,31 +74,32 @@
 
 \begin{frame}
 \frametitle{Naive Measure - Realized Volatility}
-Realized volatility (also called historical volatility) is the standard deviation of a set of previous returns.
-
+%Realized volatility, also called historical volatility, is the standard deviation of a set of previous returns
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{abs_sp500_returns.png}
+\end{figure}
 \end{frame}
+
 
 \begin{frame}
 \frametitle{Stylized Facts}
+Further analysis of $\{X_t\}$ reveals other kinds of structure that cannot be explained by the gaussian assumption.\\
 
-Bachlier (1900) showed that the returns series $\{X_t\}$
+In particular, the return series displays the following distinctive behavior:
 
-
-\begin{itemize}
+\begin{enumerate}
 \item{$\{X_t\}$ is heavy-tailed, much more so than the Gaussian white noise}
 \item{Although $\{X_t\}$ is uncorrelated, the series $\{X_{t}^2\}$ is highly correlated}
-\item{The changes in $\{X_t\}$ tend to be clustered, large changes tend to be followed by large changes and vice versa}
-\end{itemize}
-
-Describe stylized facts.
-Show plot of S&P500 returns to reinforce these facts.
+\item{The changes in $\{X_t\}$ tend to be clustered, large changes tend to be followed by large changes and vice v}
+\item{Effects are asymmetric, bad news results in larger downward price moves than positive news does to upward price moves}
+\end{enumerate}
 \end{frame}
 
 \begin{frame}
 \frametitle{S&P500 Daily Returns (1950-2018)}
 \begin{figure}[h!]
 \centering 
-\includegraphics[height=3.75in, width=4.75in]{sp500_returns.pdf}
+\includegraphics[width=\textwidth]{sp500_returns.png}
 \end{figure}
 \end{frame}
 
@@ -124,6 +125,9 @@ For the purposes of this talk, we'll focus on GARCH(1,1) models where $\sigma_{t
 
 \begin{frame}
 \frametitle{NoVaS Transformation}
+The NoVaS Transformation is defined as $$ W_{t,a} = \frac{X_t}{\sqrt{\alpha s^2_{t-1} + a_0 X^2_{t} + \sum_{i=1}^{p} a_i X^2_{t-i}}} $$
+
+
 Include definition of NoVaS transformation and how it's derived.
 Include algorithm for Simple NoVaS, which is the one we'll be focusing on for the purposes of this talk
 \end{frame}
@@ -134,7 +138,7 @@ Include algorithm for Simple NoVaS, which is the one we'll be focusing on for th
 \frametitle{S&P500 Daily Returns (1950-2018)}
 \begin{figure}[h!]
 \centering 
-\includegraphics[height=\textheight, width=\textwidth]{sp500_returns.png}
+\includegraphics[width=\textwidth]{sp500_returns.png}
 \end{figure}
 \end{frame}
 
