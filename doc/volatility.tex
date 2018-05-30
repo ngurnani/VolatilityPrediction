@@ -303,7 +303,7 @@ Algorithm for Simple NoVaS:
 %\end{frame}
 
 
-\section{Forecasting Volatility}
+\section{Volatility Prediction}
 
 \begin{frame}
 \frametitle{Outline}
@@ -311,11 +311,15 @@ Algorithm for Simple NoVaS:
 \end{frame}
 
 \begin{frame}
-\frametitle{One-Step Ahead Prediction}
-Define the volatility prediction problem.
-Outline that you're using squared returns $Y_{t}^2$ as a noisy proxy for Volatility
-What loss function should you use?
-Will use a window size of 250 days which is approx. 1 year
+\frametitle{Volatility Prediction}
+
+We focus on the problem of one-step ahead prediction\\
+Volatility prediction = prediction of $X_{t}^2$ \\
+Prediction of $X_{n+1}^2$ based on the observed past \\
+Define the volatility prediction problem. \\
+Outline that you're using squared returns $Y_{t}^2$ as a noisy proxy for Volatility \\
+What loss function should you use? \\
+Will use a window size of 250 days which is approx. 1 year \\
 \end{frame}
 
 \begin{frame}
@@ -342,6 +346,25 @@ If this is the case you, predicting under L2 is incorrect. Instead you should L1
 \begin{frame}
 \frametitle{Prediction Intervals}
 Steps for deriving prediction intervals - same for GARCH and NoVaS
+
+\begin{enumerate}
+\item{Use simple NoVaS to obtain transformed data $\{W_{t,a}$ for $t=p+1,\dots,n \}$ that are assumed to be approximately i.i.d. Let $p, \alpha$ and $a_i$ denote the fitted NoVaS parameters}
+\item{Calculate $\widehat{g(Y_{n+1})}$ the point predictor of $g(y_{n+1})$ as the median of the set etc.}
+
+\item{Main Bootstrap Loop}
+\begin{enumerate}
+\item{Resample randomly (with replacement) the transformed variables  $\{W_{t,a}$ for $t=p+1,\dots,n \}$ to create the pseudo-data $W_{p+1}^*,\dots, W_{n-1}^*, W_{n}^*$ and $W_{n+1}^*$}
+\item{Let $(Y_{1}^*,\dots,Y_{p}^*)' = (Y_{1+I}^*,\dots,Y_{p+I}^*)'$ where I is generated as a discrete random variable uniform on the values $0,1,\dots,n-p$}
+\item{Generate the bootstrap pseudo-data $Y_{t}^*$ for $t=p+1,\dots,n$ using equation (10.17) $$ Y_{t}^* = \frac{W_{t}}{\sqrt{1-a_0W_{t}^{*2}}}\sqrt{\sum_{i=1}^{p} a_iY_{t-i}^{*2}}$$ for $t=p+1,\dots,n$}
+\item{Based on the bootstrap data $Y_{1}^*,\dots,Y_{n}^*$ re-estimate the NoVaS transformation, then calculate the bootstrap predictor $\widehat{g(Y_{n+1}^*)}$ as the median of the set}
+\item{Calculate the bootstrap future value $Y_{n+1}^*$}
+\item{Calculate the bootstrap root: $g(Y_{n+1}^*) - \widehat{g(Y_{n+1}^*)}$}
+\end{enumerate}
+
+\item{Repeat step 3 above B times the B bootstrap root replicates are collected in the form of an empirical distribution whose $\alpha$-quantile is denoted $q(\alpha)$}
+\item{The $(1-\alpha)100\%$ equal-tailed prediction interval for $g(Y_{n+1})$ is given by $$ [\widehat{g(Y_{n+1})} + q(\alpha/2), \widehat{g(Y_{n+1})} + q(1-\alpha/2)] $$}
+
+\end{enumerate}
 \end{frame}
 
 \begin{frame}
@@ -358,13 +381,32 @@ Shows that Simple NoVaS is better than GARCH(1,1)
 \end{frame}
 
 \begin{frame}
-\frametitle{Can predict $sigma^2$ using NoVaS under special conditions}
+\frametitle{Estimating the volatility $\mathbb{E}(Y_{n+1}^2|\mathfrak{F_n})$
+}
+
+Under case I, i.e. after empirically showing that the $W_{t,a}$ variables are (approximately) uncorrelated and hence independent, it is straightforward to construct a Model-free estimate of the conditional expectation $\mathbb{E}(Y_{n+1}^2|\mathfrak{F_{n}})$.
+
+
+$$\mathbb{E}(Y_{n+1}^2|\mathfrak{F_{n}}) = A_{n}^2 \mathbb{E} \bigg( \frac{W_{t,a}^2}{1-a_0 W_{t,a}^2} \bigg) $$
+
+a natural estimate thereof is
+
+$$ \frac{A_{n}^2}{n-p} \sum_{t=p+1}^{n} \bigg( \frac{W_{t,a}^2}{1-a_0 W_{t,a}^2} \bigg) $$
+
 Talk about the conditions under which you can actually predict $sigma^2$, plot the ACF to confirm that transformed series is uncorrelated and independent.
 \end{frame}
 
 \begin{frame}
 \frametitle{RV(t+1)-IV(t)}
-Outline strategy that if RV(t+1)-IV(t) $>$ 0 you buy VXX and vice versa.
+We consider a very simple volatility trading strategy found in Ahmad & Wilmott (2005)
+
+Strategy:
+\begin{itemize}
+\item{If RV(t+1) - VIX(t) $>$ 0 then BUY VXX. Vice Versa.}
+\item{RV(t+1) is the GARCH or NoVaS predicted realized volatility for next period}
+\item{Expect RV(t+1) to be better predictor of VIX(t+1) than VIX(t)}
+\item{VIX(t) = IV(t) is the current implied volatility}
+\end{itemize}
 \end{frame}
 
 \begin{frame}
