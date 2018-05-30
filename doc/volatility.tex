@@ -84,7 +84,7 @@
 \begin{frame}
 \frametitle{Stylized Facts}
 Further analysis of $\{X_t\}$ reveals other kinds of structure that cannot be explained by the gaussian assumption.\\
-
+\vspace{0.5cm}
 In particular, the return series displays the following distinctive behavior:
 
 \begin{enumerate}
@@ -124,12 +124,22 @@ For the purposes of this talk, we'll focus on GARCH(1,1) models where $\sigma_{t
 \end{frame}
 
 \begin{frame}
-\frametitle{NoVaS Transformation}
-The NoVaS Transformation is defined as $$ W_{t,a} = \frac{X_t}{\sqrt{\alpha s^2_{t-1} + a_0 X^2_{t} + \sum_{i=1}^{p} a_i X^2_{t-i}}} $$
+\frametitle{NoVaS Transformation (Politis 2007)}
+The NoVaS Transformation is defined as $$ W_{t,a} = \frac{X_t}{\sqrt{\alpha s^2_{t-1} + a_0 X^2_{t} + \sum_{i=1}^{p} a_i X^2_{t-i}}}$$ for $t=p+1,p+2,\dots,n$ \\
+\vspace{3pt}
+It is a clever extension of the ARCH model where we include the value $X_t$ in order to ``studentize'' the returns.\\
+\vspace{5pt}
+The order $p$ and the vector of nonnegative parameters $(\a,a_0,\dots,a_p)$ are chosen by the practitioner with the twin goals of normalization and variance-stabilization.\\
+\vspace{5pt}
+Algorithm for Simple NoVaS:
+\begin{itemize}
+\item{Let $\a = 0$ and $a_i = \frac{1}{p+1}$ for all $0 \leq i \leq p$}
+\item{Pick $p$ such that $|KURT_{n}(W_{t,p}^{S})| \approx 3$}
+\end{itemize}
 
 
-Include definition of NoVaS transformation and how it's derived.
-Include algorithm for Simple NoVaS, which is the one we'll be focusing on for the purposes of this talk
+
+
 \end{frame}
 
 
@@ -143,13 +153,21 @@ Include algorithm for Simple NoVaS, which is the one we'll be focusing on for th
 \end{frame}
 
 \begin{frame}
-\frametitle{S&P500}
-pre-NoVas S&P500 returns histogram
+\frametitle{S&P500 Daily Returns Histogram}
+\begin{figure}[h!]
+\centering 
+\includegraphics[width=\textwidth]{sp500_returns_hist.png}
+\end{figure}
+
 \end{frame}
 
 \begin{frame}
-\frametitle{S&P500}
-pre-NoVas S&P500 returns q-q plot
+\frametitle{S&P500 Daily Returns Q-Q Plot}
+\begin{figure}[h!]
+\centering 
+\includegraphics[width=\textwidth]{sp500_returns_qqplot.png}
+\end{figure}
+
 \end{frame}
 
 \begin{frame}
