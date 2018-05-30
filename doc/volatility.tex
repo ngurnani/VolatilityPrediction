@@ -313,38 +313,55 @@ Algorithm for Simple NoVaS:
 \begin{frame}
 \frametitle{Volatility Prediction}
 
-We focus on the problem of one-step ahead prediction\\
-Volatility prediction = prediction of $X_{t}^2$ \\
-Prediction of $X_{n+1}^2$ based on the observed past \\
-Define the volatility prediction problem. \\
-Outline that you're using squared returns $Y_{t}^2$ as a noisy proxy for Volatility \\
-What loss function should you use? \\
-Will use a window size of 250 days which is approx. 1 year \\
+\begin{itemize}
+\item{Forecasts of volatility are important when assessing and managing the risks of portfolios}
+\vspace{3pt}
+\item{We focus on the problem of one-step ahead $X_{t+1}$ prediction based on the observed past}
+\vspace{3pt}
+\item{For our purposes, volatility prediction = predicting $X_{t+1}^2$}
+\vspace{3pt}
+\item{Even though $X_{t+1}^2$ is a noisy proxy for $\mathbb{E}(X_{t+1}^2|\mathfrak{F_n})$, we'll see that in under some conditions NoVaS allows us to predict the latter}
+\vspace{3pt}
+%\item{$X_{t}^2$ has the theoretical advantage that optimal forecasts can also be optimal forecasts for $\sigma^2$, however we'll show that this condition isn't particularly relevant}
+\item{Assuming more realistically that financial returns are locally stationary, we use a rolling window size of 250 days to calculate our forecasts}
+\end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Infinite Kurtosis?}
-Do financial returns have infinite kurtosis?
-If this is the case you, predicting under L2 is incorrect. Instead you should L1 loss where the median is optimal
+\frametitle{Which Loss Function? $L_1$ or $L_2$?}
+\begin{itemize}
+\item{To assess the accuracy of forecasts, we need to decide on a loss function to use}
+\vspace{3pt}
+\item{The MSE is most commonly used, however note that $\mathbb{E}(Y_{n+1}^{2}-\widehat{Y_{n+1}^2})^2$ is essentially a fourth moment}
+\vspace{3pt}
+\item{Thus the unconditional MSE is infinite if the returns process has infinite kurtosis!}
+\vspace{3pt}
+\item{We find that this indeed the case and so focus on the Mean Absolute Deviation (MAD) loss function}
+\vspace{3pt}
+\item{Under the objective of $L_1$-optimal prediction, the optimal predictor is $Median(X_{n+1}^2|\mathfrak{F_n})$}
+\end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Infinite Kurtosis Plot S&P500}
-
+\frametitle{Empirical Kurtosis Plot S&P500}
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{sp500_returns_kurtosis.png}
+\end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Infinite Kurtosis Plot BTC}
+\frametitle{Empirical Kurtosis Plot BTC}
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{btc_returns_kurtosis.png}
+\end{figure}
 
 \end{frame}
 
-\begin{frame}
-\frametitle{Infinite Kurtosis Plot Treasury Futures}
-
-\end{frame}
 
 \begin{frame}
 \frametitle{Prediction Intervals}
+INCLUDE PREDICTION EQUATION FOR NOVAS AND GARCH
+
 Steps for deriving prediction intervals - same for GARCH and NoVaS
 
 \begin{enumerate}

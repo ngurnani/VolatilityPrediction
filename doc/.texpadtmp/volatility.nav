@@ -80,21 +80,19 @@
 \headcommand {\beamer@framepages {35}{35}}
 \headcommand {\slideentry {3}{0}{36}{36/36}{}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {3}{0}{37}{37/37}{}{0}}
+\headcommand {\sectionentry {4}{A Simple Volatility Trading Strategy}{37}{A Simple Volatility Trading Strategy}{0}}
+\headcommand {\beamer@sectionpages {30}{36}}
+\headcommand {\beamer@subsectionpages {30}{36}}
+\headcommand {\slideentry {4}{0}{37}{37/37}{}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\sectionentry {4}{A Simple Volatility Trading Strategy}{38}{A Simple Volatility Trading Strategy}{0}}
-\headcommand {\beamer@sectionpages {30}{37}}
-\headcommand {\beamer@subsectionpages {30}{37}}
 \headcommand {\slideentry {4}{0}{38}{38/38}{}{0}}
 \headcommand {\beamer@framepages {38}{38}}
 \headcommand {\slideentry {4}{0}{39}{39/39}{}{0}}
 \headcommand {\beamer@framepages {39}{39}}
 \headcommand {\slideentry {4}{0}{40}{40/40}{}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\slideentry {4}{0}{41}{41/41}{}{0}}
-\headcommand {\beamer@framepages {41}{41}}
-\headcommand {\beamer@partpages {1}{41}}
-\headcommand {\beamer@subsectionpages {38}{41}}
-\headcommand {\beamer@sectionpages {38}{41}}
-\headcommand {\beamer@documentpages {41}}
-\headcommand {\def \inserttotalframenumber {41}}
+\headcommand {\beamer@partpages {1}{40}}
+\headcommand {\beamer@subsectionpages {37}{40}}
+\headcommand {\beamer@sectionpages {37}{40}}
+\headcommand {\beamer@documentpages {40}}
+\headcommand {\def \inserttotalframenumber {40}}
