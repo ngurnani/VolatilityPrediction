@@ -243,40 +243,64 @@ Algorithm for Simple NoVaS:
 \end{frame}
 
 %% 5 min bar US Treasury Futures 10 year %%
+
 \begin{frame}
-\frametitle{Treasury Futures}
-pre-NoVas Treasury Futures returns plot
+\frametitle{5min Bar 10yr Treasury Futures (1983-2012)}
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{ty_returns.png}
+\end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Treasury Futures}
-pre-NoVas Treasury Futures returns histogram
+\frametitle{5min Bar 10yr Treasury Futures (2010-2012)}
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{ty_returns_2010.png}
+\end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Treasury Futures}
-pre-NoVas Treasury Futures returns q-q plot
+\frametitle{5min Bar 10yr Treasury Futures (2010-2012)}
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{ty_returns_2010_hist.png}
+\end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Treasury Futures}
-post-NoVas Treasury Futures returns plot
+\frametitle{5min Bar 10yr Treasury Futures (2010-2012)}
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{ty_returns_2010_qqplot.png}
+\end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Treasury Futures}
-post-NoVas Treasury Futures returns histogram
+\frametitle{NoVaS 10yr Treasury Futures (1983-2012) (p=12)}
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{novas_ty_returns.png}
+\end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Treasury Futures}
-post-NoVas Treasury Futures returns q-q plot
+\frametitle{NoVaS 10yr Treasury Futures (2010-2012) (p=12)}
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{novas_ty_returns_2010.png}
+\end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{S&P500 not perfect tranform with NoVaS}
-Simply show an imperfect transformation to make the point that financial time series over long periods are not necessary stationary (only locally stationary) and thus we should use time-varying versions of NoVaS where the window size isn't too big.
+\frametitle{NoVaS 10yr Treasury Futures (2010-2012) (p=12)}
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{novas_ty_returns_2010_qqplot.png}
+\end{figure}
 \end{frame}
+
+
+% THIS IS NOT TRUE, SIMPLE NOVAS SEEMS VERY ROBUST AGAINST
+% DIFFERENT SUBSETS OF THE DATA
+
+%\begin{frame}
+%\frametitle{S&P500 not perfect tranform with NoVaS}
+%Simply show an imperfect transformation to make the point that financial time series over long periods are not necessary stationary (only locally stationary) and thus we should use time-varying versions of NoVaS where the window size isn't too big.
+%\end{frame}
 
 
 \section{Forecasting Volatility}

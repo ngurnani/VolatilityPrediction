@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.5.25)  30 MAY 2018 01:49
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.5.25)  30 MAY 2018 14:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1290,30 +1290,51 @@ Overfull \vbox (19.33873pt too high) detected at line 243
 
 [22
 
-] [23
-
-] [24
-
-] [25
-
-] [26
-
-] [27
-
-] [28
+]
+File: ty_returns.png Graphic file (type QTm)
+ <use  "ty_returns.png" > [23
 
 ]
-./volatility.tex:279: Misplaced alignment tab character &.
-\insertframetitle ->{S&
-                       P500 not perfect tranform with NoVaS\ifnum \beamer@au...
-l.279 \end{frame}
-                 
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+File: ty_returns_2010.png Graphic file (type QTm)
+ <use  "ty_returns_2010.png" >
+Overfull \vbox (3.43065pt too high) detected at line 259
+ []
+
+[24
+
+]
+File: ty_returns_2010_hist.png Graphic file (type QTm)
+ <use  "ty_returns_2010_hist.png" >
+Overfull \vbox (6.46245pt too high) detected at line 266
+ []
+
+[25
+
+]
+File: ty_returns_2010_qqplot.png Graphic file (type QTm)
+ <use  "ty_returns_2010_qqplot.png" >
+Overfull \vbox (30.13748pt too high) detected at line 273
+ []
+
+[26
+
+]
+File: novas_ty_returns.png Graphic file (type QTm)
+ <use  "novas_ty_returns.png" > [27
+
+]
+File: novas_ty_returns_2010.png Graphic file (type QTm)
+ <use  "novas_ty_returns_2010.png" >
+Overfull \vbox (18.97011pt too high) detected at line 287
+ []
+
+[28
+
+]
+File: novas_ty_returns_2010_qqplot.png Graphic file (type QTm)
+ <use  "novas_ty_returns_2010_qqplot.png" >
+Overfull \vbox (19.30276pt too high) detected at line 294
+ []
 
 [29
 
@@ -1326,10 +1347,10 @@ c) [30
 ] [32
 
 ]
-./volatility.tex:306: Misplaced alignment tab character &.
+./volatility.tex:330: Misplaced alignment tab character &.
 \insertframetitle ->{Infinite Kurtosis Plot S&
                                               P500\ifnum \beamer@autobreakco...
-l.306 \end{frame}
+l.330 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1347,10 +1368,10 @@ might try typing `S' now just to see what is salvageable.
 ] [36
 
 ]
-./volatility.tex:327: Misplaced alignment tab character &.
+./volatility.tex:351: Misplaced alignment tab character &.
 \beamer@doifinframe ...diction} Plot predicting S&
                                                   P500 Feb 2018 Volatility s...
-l.327 \end{frame}
+l.351 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1359,10 +1380,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./volatility.tex:327: Misplaced alignment tab character &.
+./volatility.tex:351: Misplaced alignment tab character &.
 \insertframetitle ->{S&
                        P500 Feb 2018 One Step Ahead Prediction\ifnum \beamer...
-l.327 \end{frame}
+l.351 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1393,25 +1414,25 @@ c) [38
 \tf@snm=\write8
 \openout8 = `volatility.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 375.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 375.
 
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/.texpadtmp/volatility.au
 x)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 351.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 351.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 375.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 375.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 351.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 375.
  ) 
 Here is how much of TeX's memory you used:
- 21826 strings out of 493734
- 393588 string characters out of 6146348
- 450413 words of memory out of 5000000
- 24693 multiletter control sequences out of 15000+600000
+ 21840 strings out of 493734
+ 393908 string characters out of 6146348
+ 450414 words of memory out of 5000000
+ 24700 multiletter control sequences out of 15000+600000
  27392 words of font info for 86 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  56i,11n,55p,422b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
