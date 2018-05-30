@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.5.25)  29 MAY 2018 15:28
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.5.25)  29 MAY 2018 16:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -763,10 +763,15 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen195
 \l_MT_below_shortintertext_sep=\dimen196
 )
-\c@saveenumi=\count160
- (./Commands.tex
+\@input{Commands.aux}
+\openout2 = `Commands.aux'.
+
+(./Commands.tex
 \minipagewidth=\skip61
-) (/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
+)
+\c@saveenumi=\count160
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip62
 \bibsep=\skip63
@@ -812,7 +817,7 @@ Package caption Info: Hyperref support is turned off
 \sympureletters=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 27.
+ut line 28.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
@@ -824,42 +829,42 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 137.
 LaTeX Info: Redefining \bm on input line 203.
 )
 
-./volatility.tex:28: LaTeX Error: Command \c@saveenumi already defined.
+./volatility.tex:29: LaTeX Error: Command \c@saveenumi already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 \newcounter{saveenumi}
+l.29 \newcounter{saveenumi}
                            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./volatility.tex:29: LaTeX Error: Command \seti already defined.
+./volatility.tex:30: LaTeX Error: Command \seti already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.29 ...ti}{\setcounter{saveenumi}{\value{enumi}}}
+l.30 ...ti}{\setcounter{saveenumi}{\value{enumi}}}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./volatility.tex:30: LaTeX Error: Command \conti already defined.
+./volatility.tex:31: LaTeX Error: Command \conti already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.30 ...ti}{\setcounter{enumi}{\value{saveenumi}}}
+l.31 ...ti}{\setcounter{enumi}{\value{saveenumi}}}
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -867,29 +872,29 @@ or  <return>  to continue without it.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 39.
+(hyperref)                removing `\\' on input line 40.
 
 
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
 volatility.aux)
 \openout1 = `volatility.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -927,7 +932,7 @@ LaTeX Font Info:    ... okay on input line 44.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 44.
+Package hyperref Info: Link coloring OFF on input line 43.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -937,9 +942,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count169
 )
-LaTeX Info: Redefining \ref on input line 44.
-LaTeX Info: Redefining \pageref on input line 44.
-LaTeX Info: Redefining \nameref on input line 44.
+LaTeX Info: Redefining \ref on input line 43.
+LaTeX Info: Redefining \pageref on input line 43.
+LaTeX Info: Redefining \nameref on input line 43.
 
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
 volatility.out)
@@ -949,59 +954,59 @@ volatility.out)
 \openout5 = `volatility.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 44.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 43.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 44.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 43.
 \symnumbers=\mathgroup11
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 44.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 43.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/cmss/m/it on input line 4
-4.
+3.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/bx/sl --> OT1/cmss/m/it on input line 
-44.
+43.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 44.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 43.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 44.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 44.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 43.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 44.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 44.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 43.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 44.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 44.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 43.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 44.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 43.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 44.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 44.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 44.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 44.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 44.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 43.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 44.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 44.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 43.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 43.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 4
-4.
+3.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-44.
+43.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 44.
+ut line 43.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -1027,7 +1032,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 44.
+LaTeX Info: Redefining \includegraphics on input line 43.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: Incompatible package detected (regarding \caption).
@@ -1048,98 +1053,229 @@ Package caption Info: End \AtBeginDocument code.
 volatility.nav)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
-(Font)              size <5> substituted on input line 49.
+(Font)              size <5> substituted on input line 48.
 
 [1
 
+
+
 ]
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
-volatility.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 4.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 4.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 4.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-)) [2
+volatility.toc) [2
 
 ]
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
 volatility.toc) [3
 
 ]
+LaTeX Font Info:    Try loading font information for U+msa on input line 71.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 66.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 71.
 
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
+line 71.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 66.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 66.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 66.
-
-[4
+(/usr/local/texlive/2014/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+) [4
 
 ] [5
 
-] [6
+]
+./volatility.tex:83: Misplaced alignment tab character &.
+\beamer@doifinframe ...ized facts. Show plot of S&
+                                                  P500 returns to reinforce ...
+l.83 \end{frame}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[6
 
 ] [7
 
-] [8
+]
+(/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
+volatility.toc) [8
 
 ] [9
 
-] [10
+]
+./volatility.tex:110: Misplaced alignment tab character &.
+\beamer@doifinframe ...title {S&P500} pre-NoVas S&
+                                                  P500 returns plot \end {be...
+l.110 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-] [11
+./volatility.tex:110: Misplaced alignment tab character &.
+\insertframetitle ->{S&
+                       P500\ifnum \beamer@autobreakcount >0\relax {}\space \...
+l.110 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-] [12
-
-] [13
+[10
 
 ]
-Overfull \hbox (59.0972pt too wide) in paragraph at lines 155--155
-[]  
- []
+./volatility.tex:115: Misplaced alignment tab character &.
+\beamer@doifinframe ...title {S&P500} pre-NoVas S&
+                                                  P500 returns histogram \en...
+l.115 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./volatility.tex:115: Misplaced alignment tab character &.
+\insertframetitle ->{S&
+                       P500\ifnum \beamer@autobreakcount >0\relax {}\space \...
+l.115 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[11
+
+]
+./volatility.tex:120: Misplaced alignment tab character &.
+\beamer@doifinframe ...title {S&P500} pre-NoVas S&
+                                                  P500 returns q-q plot \end...
+l.120 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./volatility.tex:120: Misplaced alignment tab character &.
+\insertframetitle ->{S&
+                       P500\ifnum \beamer@autobreakcount >0\relax {}\space \...
+l.120 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[12
+
+]
+./volatility.tex:125: Misplaced alignment tab character &.
+\beamer@doifinframe ...itle {S&P500} post-NoVas S&
+                                                  P500 returns plot \end {be...
+l.125 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./volatility.tex:125: Misplaced alignment tab character &.
+\insertframetitle ->{S&
+                       P500\ifnum \beamer@autobreakcount >0\relax {}\space \...
+l.125 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[13
+
+]
+./volatility.tex:130: Misplaced alignment tab character &.
+\beamer@doifinframe ...itle {S&P500} post-NoVas S&
+                                                  P500 returns histogram \en...
+l.130 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./volatility.tex:130: Misplaced alignment tab character &.
+\insertframetitle ->{S&
+                       P500\ifnum \beamer@autobreakcount >0\relax {}\space \...
+l.130 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
 [14
 
 ]
-Overfull \hbox (59.0972pt too wide) in paragraph at lines 155--155
-[]  
- []
+./volatility.tex:135: Misplaced alignment tab character &.
+\beamer@doifinframe ...itle {S&P500} post-NoVas S&
+                                                  P500 returns q-q plot \end...
+l.135 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./volatility.tex:135: Misplaced alignment tab character &.
+\insertframetitle ->{S&
+                       P500\ifnum \beamer@autobreakcount >0\relax {}\space \...
+l.135 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
 [15
 
-]
-Overfull \hbox (59.0972pt too wide) in paragraph at lines 155--155
-[]  
- []
+] [16
 
-[16
-
-]
-Overfull \hbox (59.0972pt too wide) in paragraph at lines 155--155
-[]  
- []
-
-[17
+] [17
 
 ] [18
 
@@ -1161,15 +1297,42 @@ Overfull \hbox (59.0972pt too wide) in paragraph at lines 155--155
 
 ] [27
 
-] [28
+]
+./volatility.tex:202: Misplaced alignment tab character &.
+\insertframetitle ->{S&
+                       P500 not perfect tranform with NoVaS\ifnum \beamer@au...
+l.202 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-] [29
+[28
+
+]
+(/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
+volatility.toc) [29
 
 ] [30
 
 ] [31
 
 ]
+./volatility.tex:229: Misplaced alignment tab character &.
+\insertframetitle ->{Infinite Kurtosis Plot S&
+                                              P500\ifnum \beamer@autobreakco...
+l.229 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 [32
 
 ] [33
@@ -1178,269 +1341,42 @@ Overfull \hbox (59.0972pt too wide) in paragraph at lines 155--155
 
 ] [35
 
-] [36
+]
+./volatility.tex:253: Misplaced alignment tab character &.
+\beamer@doifinframe ...diction} Plot predicting S&
+                                                  P500 Feb 2018 Volatility s...
+l.253 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-] [37
+./volatility.tex:253: Misplaced alignment tab character &.
+\insertframetitle ->{S&
+                       P500 Feb 2018 One Step Ahead Prediction\ifnum \beamer...
+l.253 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[36
+
+]
+(/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
+volatility.toc) [37
 
 ] [38
 
 ] [39
 
 ] [40
-
-] [41
-
-] [42
-
-] [43
-
-] [44
-
-] [45
-
-] [46
-
-]
-[47
-
-]
-File: parallel_lines.png Graphic file (type QTm)
- <use  "parallel_lines.png" > [48
-
-]
-File: parallel_lines.png Graphic file (type QTm)
- <use  "parallel_lines.png" > [49
-
-]
-File: parallel_lines.png Graphic file (type QTm)
-
-<use  "parallel_lines.png" > [50
-
-]
-File: parallel_lines.png Graphic file (type QTm)
- <use  "parallel_lines.png" > [51
-
-] [52
-
-]
-[53
-
-]
-./volatility.tex:352: Undefined control sequence.
-\beamer@doifinframe ...ibution of $g_{\theta }(\Z 
-                                                  )$. Then, \begin {enumerat...
-l.352 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[54
-
-] [55
-
-] [56
-
-] [57
-
-] [58
-
-] [59
-
-] [60
-
-] [61
-
-] [62
-
-] [63
-
-] [64
-
-] [65
-
-] [66
-
-] [67
-
-]
-Overfull \hbox (7.92186pt too wide) detected at line 467
-[] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl/10.95 f[]\OT
-1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.95 )] \OMS/cms
-y/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl
-/10.95 f[]\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.9
-5 )] \OMS/cmsy/m/n/10.95 ^^T [] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/m
-athkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1
-/cmss/m/n/10.95 )] \OMS/cmsy/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10
-.95 [\OT1/mathkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/
-10.95 x\OT1/cmss/m/n/10.95 )]
- []
-
-[68
-
-]
-Overfull \hbox (7.92186pt too wide) detected at line 467
-[] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl/10.95 f[]\OT
-1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.95 )] \OMS/cms
-y/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl
-/10.95 f[]\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.9
-5 )] \OMS/cmsy/m/n/10.95 ^^T [] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/m
-athkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1
-/cmss/m/n/10.95 )] \OMS/cmsy/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10
-.95 [\OT1/mathkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/
-10.95 x\OT1/cmss/m/n/10.95 )]
- []
-
-[69
-
-]
-Overfull \hbox (7.92186pt too wide) detected at line 467
-[] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl/10.95 f[]\OT
-1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.95 )] \OMS/cms
-y/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl
-/10.95 f[]\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.9
-5 )] \OMS/cmsy/m/n/10.95 ^^T [] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/m
-athkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1
-/cmss/m/n/10.95 )] \OMS/cmsy/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10
-.95 [\OT1/mathkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/
-10.95 x\OT1/cmss/m/n/10.95 )]
- []
-
-[70
-
-]
-Overfull \hbox (7.92186pt too wide) detected at line 467
-[] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl/10.95 f[]\OT
-1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.95 )] \OMS/cms
-y/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl
-/10.95 f[]\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.9
-5 )] \OMS/cmsy/m/n/10.95 ^^T [] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/m
-athkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1
-/cmss/m/n/10.95 )] \OMS/cmsy/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10
-.95 [\OT1/mathkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/
-10.95 x\OT1/cmss/m/n/10.95 )]
- []
-
-[71
-
-]
-Overfull \hbox (7.92186pt too wide) detected at line 467
-[] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl/10.95 f[]\OT
-1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.95 )] \OMS/cms
-y/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl
-/10.95 f[]\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.9
-5 )] \OMS/cmsy/m/n/10.95 ^^T [] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/m
-athkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1
-/cmss/m/n/10.95 )] \OMS/cmsy/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10
-.95 [\OT1/mathkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/
-10.95 x\OT1/cmss/m/n/10.95 )]
- []
-
-[72
-
-]
-Overfull \hbox (7.92186pt too wide) detected at line 467
-[] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl/10.95 f[]\OT
-1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.95 )] \OMS/cms
-y/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl
-/10.95 f[]\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1/cmss/m/n/10.9
-5 )] \OMS/cmsy/m/n/10.95 ^^T [] \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10.95 [\OT1/m
-athkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 x\OT1
-/cmss/m/n/10.95 )] \OMS/cmsy/m/n/10.95 ^^@ \U/msb/m/n/10.95 E[]\OT1/cmss/m/n/10
-.95 [\OT1/mathkerncmss/m/sl/10.95 f\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/
-10.95 x\OT1/cmss/m/n/10.95 )]
- []
-
-[73
-
-] [74
-
-] [75
-
-] [76
-
-] [77
-
-] [78
-
-] [79
-
-] [80
-
-] [81
-
-] [82
-
-]
-File: wgan.png Graphic file (type QTm)
- <use  "wgan.png" >
-Overfull \hbox (21.51253pt too wide) in paragraph at lines 512--512
- [] 
- []
-
-[83
-
-] [84
-
-] [85
-
-] [86
-
-] [87
-
-] [88
-
-] [89
-
-] [90
-
-] [91
-
-] [92
-
-] [93
-
-] [94
-
-] [95
-
-] [96
-
-] [97
-
-]
-File: penalty.png Graphic file (type QTm)
-
-<use  "penalty.png" > [98
-
-]
-File: penalty.png Graphic file (type QTm)
- <use  "penalty.png" > [99
-
-]
-File: penalty.png Graphic file (type QTm)
- <use  "penalty.png" >
-[100
-
-]
-File: penalty.png Graphic file (type QTm)
- <use  "penalty.png" > [101
-
-]
-File: penalty.png Graphic file (type QTm)
- <use  "penalty.png" > [102
-
-]
-File: i_wgan.png Graphic file (type QTm)
-
-<use  "i_wgan.png" >
-Overfull \hbox (21.51253pt too wide) in paragraph at lines 589--589
- [] 
- []
-
-[103
 
 ]
 \tf@nav=\write6
@@ -1452,28 +1388,28 @@ Overfull \hbox (21.51253pt too wide) in paragraph at lines 589--589
 \tf@snm=\write8
 \openout8 = `volatility.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 591.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 591.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 277.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 277.
 
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
 volatility.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 591.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 591.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 277.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 277.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 591.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 277.
  ) 
 Here is how much of TeX's memory you used:
- 21826 strings out of 493734
- 394059 string characters out of 6146348
- 454346 words of memory out of 5000000
- 24711 multiletter control sequences out of 15000+600000
- 25410 words of font info for 80 fonts, out of 8000000 for 9000
+ 21780 strings out of 493734
+ 392822 string characters out of 6146348
+ 448414 words of memory out of 5000000
+ 24662 multiletter control sequences out of 15000+600000
+ 27392 words of font info for 86 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 56i,14n,55p,422b,649s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,11n,55p,422b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Present
-ation/.texpadtmp/volatility.pdf (103 pages).
+ation/.texpadtmp/volatility.pdf (40 pages).
