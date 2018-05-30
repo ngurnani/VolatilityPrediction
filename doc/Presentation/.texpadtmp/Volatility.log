@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.5.25)  29 MAY 2018 16:53
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.5.25)  29 MAY 2018 21:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1068,18 +1068,18 @@ volatility.toc) [2
 volatility.toc) [3
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 71.
+LaTeX Font Info:    Try loading font information for U+msa on input line 73.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 71.
+LaTeX Font Info:    Try loading font information for U+msb on input line 73.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 71.
+line 73.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1089,10 +1089,10 @@ thkerncmss.
 ] [5
 
 ]
-./volatility.tex:83: Misplaced alignment tab character &.
+./volatility.tex:98: Misplaced alignment tab character &.
 \beamer@doifinframe ...ized facts. Show plot of S&
                                                   P500 returns to reinforce ...
-l.83 \end{frame}
+l.98 \end{frame}
                 
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1103,19 +1103,44 @@ might try typing `S' now just to see what is salvageable.
 
 [6
 
-] [7
+]
+File: sp500_returns.png Graphic file (type QTm)
+ <use  "sp500_returns.png" >
+Overfull \hbox (56.90549pt too wide) in paragraph at lines 106--106
+ [] 
+ []
+
+./volatility.tex:106: Misplaced alignment tab character &.
+\insertframetitle ->{S&
+                       P500 Daily Returns (1950-2018)\ifnum \beamer@autobrea...
+l.106 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \vbox (55.47638pt too high) detected at line 106
+ []
+
+[7
+
+] [8
 
 ]
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
-volatility.toc) [8
+volatility.toc) [9
 
-] [9
+] [10
 
 ]
-./volatility.tex:110: Misplaced alignment tab character &.
+./volatility.tex:140: Misplaced alignment tab character &.
 \beamer@doifinframe ...title {S&P500} pre-NoVas S&
                                                   P500 returns plot \end {be...
-l.110 \end{frame}
+l.140 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1124,37 +1149,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./volatility.tex:110: Misplaced alignment tab character &.
+./volatility.tex:140: Misplaced alignment tab character &.
 \insertframetitle ->{S&
                        P500\ifnum \beamer@autobreakcount >0\relax {}\space \...
-l.110 \end{frame}
-                 
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-[10
-
-]
-./volatility.tex:115: Misplaced alignment tab character &.
-\beamer@doifinframe ...title {S&P500} pre-NoVas S&
-                                                  P500 returns histogram \en...
-l.115 \end{frame}
-                 
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-./volatility.tex:115: Misplaced alignment tab character &.
-\insertframetitle ->{S&
-                       P500\ifnum \beamer@autobreakcount >0\relax {}\space \...
-l.115 \end{frame}
+l.140 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1166,10 +1164,10 @@ might try typing `S' now just to see what is salvageable.
 [11
 
 ]
-./volatility.tex:120: Misplaced alignment tab character &.
+./volatility.tex:145: Misplaced alignment tab character &.
 \beamer@doifinframe ...title {S&P500} pre-NoVas S&
-                                                  P500 returns q-q plot \end...
-l.120 \end{frame}
+                                                  P500 returns histogram \en...
+l.145 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1178,10 +1176,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./volatility.tex:120: Misplaced alignment tab character &.
+./volatility.tex:145: Misplaced alignment tab character &.
 \insertframetitle ->{S&
                        P500\ifnum \beamer@autobreakcount >0\relax {}\space \...
-l.120 \end{frame}
+l.145 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1193,10 +1191,10 @@ might try typing `S' now just to see what is salvageable.
 [12
 
 ]
-./volatility.tex:125: Misplaced alignment tab character &.
-\beamer@doifinframe ...itle {S&P500} post-NoVas S&
-                                                  P500 returns plot \end {be...
-l.125 \end{frame}
+./volatility.tex:150: Misplaced alignment tab character &.
+\beamer@doifinframe ...title {S&P500} pre-NoVas S&
+                                                  P500 returns q-q plot \end...
+l.150 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1205,10 +1203,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./volatility.tex:125: Misplaced alignment tab character &.
+./volatility.tex:150: Misplaced alignment tab character &.
 \insertframetitle ->{S&
                        P500\ifnum \beamer@autobreakcount >0\relax {}\space \...
-l.125 \end{frame}
+l.150 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1220,10 +1218,10 @@ might try typing `S' now just to see what is salvageable.
 [13
 
 ]
-./volatility.tex:130: Misplaced alignment tab character &.
+./volatility.tex:155: Misplaced alignment tab character &.
 \beamer@doifinframe ...itle {S&P500} post-NoVas S&
-                                                  P500 returns histogram \en...
-l.130 \end{frame}
+                                                  P500 returns plot \end {be...
+l.155 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1232,10 +1230,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./volatility.tex:130: Misplaced alignment tab character &.
+./volatility.tex:155: Misplaced alignment tab character &.
 \insertframetitle ->{S&
                        P500\ifnum \beamer@autobreakcount >0\relax {}\space \...
-l.130 \end{frame}
+l.155 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1247,10 +1245,10 @@ might try typing `S' now just to see what is salvageable.
 [14
 
 ]
-./volatility.tex:135: Misplaced alignment tab character &.
+./volatility.tex:160: Misplaced alignment tab character &.
 \beamer@doifinframe ...itle {S&P500} post-NoVas S&
-                                                  P500 returns q-q plot \end...
-l.135 \end{frame}
+                                                  P500 returns histogram \en...
+l.160 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1259,10 +1257,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./volatility.tex:135: Misplaced alignment tab character &.
+./volatility.tex:160: Misplaced alignment tab character &.
 \insertframetitle ->{S&
                        P500\ifnum \beamer@autobreakcount >0\relax {}\space \...
-l.135 \end{frame}
+l.160 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1273,7 +1271,32 @@ might try typing `S' now just to see what is salvageable.
 
 [15
 
-] [16
+]
+./volatility.tex:165: Misplaced alignment tab character &.
+\beamer@doifinframe ...itle {S&P500} post-NoVas S&
+                                                  P500 returns q-q plot \end...
+l.165 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./volatility.tex:165: Misplaced alignment tab character &.
+\insertframetitle ->{S&
+                       P500\ifnum \beamer@autobreakcount >0\relax {}\space \...
+l.165 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[16
 
 ] [17
 
@@ -1297,11 +1320,13 @@ might try typing `S' now just to see what is salvageable.
 
 ] [27
 
+] [28
+
 ]
-./volatility.tex:202: Misplaced alignment tab character &.
+./volatility.tex:232: Misplaced alignment tab character &.
 \insertframetitle ->{S&
                        P500 not perfect tranform with NoVaS\ifnum \beamer@au...
-l.202 \end{frame}
+l.232 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1310,21 +1335,21 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[28
+[29
 
 ]
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
-volatility.toc) [29
-
-] [30
+volatility.toc) [30
 
 ] [31
 
+] [32
+
 ]
-./volatility.tex:229: Misplaced alignment tab character &.
+./volatility.tex:259: Misplaced alignment tab character &.
 \insertframetitle ->{Infinite Kurtosis Plot S&
                                               P500\ifnum \beamer@autobreakco...
-l.229 \end{frame}
+l.259 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1333,19 +1358,19 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[32
-
-] [33
+[33
 
 ] [34
 
 ] [35
 
+] [36
+
 ]
-./volatility.tex:253: Misplaced alignment tab character &.
+./volatility.tex:280: Misplaced alignment tab character &.
 \beamer@doifinframe ...diction} Plot predicting S&
                                                   P500 Feb 2018 Volatility s...
-l.253 \end{frame}
+l.280 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1354,10 +1379,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./volatility.tex:253: Misplaced alignment tab character &.
+./volatility.tex:280: Misplaced alignment tab character &.
 \insertframetitle ->{S&
                        P500 Feb 2018 One Step Ahead Prediction\ifnum \beamer...
-l.253 \end{frame}
+l.280 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1366,17 +1391,17 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[36
+[37
 
 ]
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
-volatility.toc) [37
-
-] [38
+volatility.toc) [38
 
 ] [39
 
 ] [40
+
+] [41
 
 ]
 \tf@nav=\write6
@@ -1388,28 +1413,28 @@ volatility.toc) [37
 \tf@snm=\write8
 \openout8 = `volatility.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 277.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 277.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
 
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Presentation/.texpadtmp/
 volatility.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 277.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 277.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 304.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 304.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 277.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
  ) 
 Here is how much of TeX's memory you used:
- 21780 strings out of 493734
- 392822 string characters out of 6146348
+ 21794 strings out of 493734
+ 393089 string characters out of 6146348
  448414 words of memory out of 5000000
- 24662 multiletter control sequences out of 15000+600000
+ 24673 multiletter control sequences out of 15000+600000
  27392 words of font info for 86 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  56i,11n,55p,422b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on /Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/Present
-ation/.texpadtmp/volatility.pdf (40 pages).
+ation/.texpadtmp/volatility.pdf (41 pages).

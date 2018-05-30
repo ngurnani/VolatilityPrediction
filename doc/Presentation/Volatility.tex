@@ -65,28 +65,58 @@
 \begin{frame}
 \frametitle{What is Volatility?}
 \begin{itemize}
-\item Volatility is peculiar in that we know it exists, but we can't really measure it.
-\item Conventional definitions rely on some distribution assumption on the returns, after which volatility is defined as the standard deviation $\sigma$ of the returns (to make things nicer we'll define it as )
+\item{Volatility is a measure of price variability over some period of time}
+\item{Typically described by the standard deviation $\sigma$ of the return series $\{X_t\}$}
+\item{Volatility is peculiar in that we know it exists, but in some sense we can't really measure it}
+\item{Bachelier (1900) showed that $\{X_t\} \sim$ iid. $N(0,1)$, but this is only good for a first order approximation}
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Naive Measure}
-Include plot of rolling standard deviations on absolute returns
-Describe why this is an unsatisfying measure
+\frametitle{Naive Measure - Realized Volatility}
+Realized volatility (also called historical volatility) is the standard deviation of a set of previous returns.
+
 \end{frame}
 
 \begin{frame}
 \frametitle{Stylized Facts}
+
+Bachlier (1900) showed that the returns series $\{X_t\}$
+
+
+\begin{itemize}
+\item{$\{X_t\}$ is heavy-tailed, much more so than the Gaussian white noise}
+\item{Although $\{X_t\}$ is uncorrelated, the series $\{X_{t}^2\}$ is highly correlated}
+\item{The changes in $\{X_t\}$ tend to be clustered, large changes tend to be followed by large changes and vice versa}
+\end{itemize}
+
+
+
+
 Describe stylized facts.
 Show plot of S&P500 returns to reinforce these facts.
 \end{frame}
 
 \begin{frame}
+\frametitle{S&P500 Daily Returns (1950-2018)}
+\begin{figure}
+\center 
+\includegraphics[keepaspectratio=true,width=1\paperwidth]{sp500_returns.png}
+\end{figure}
+\end{frame}
+
+
+
+\begin{frame}
 \frametitle{GARCH}
-Popular method to model volatility
-Show formulas and how it's trained.
-For the purposes of this talk we'll focus on GARCH(1,1) models.
+The Generalized ARCH (GARCH) model of Bollerslev (1986) and it's variants are extremely popular (albeit imperfect) methods to model volatility.\\
+\vspace{15pt}
+GARCH(p,q) model can be expressed as:
+
+$$ X_t = \sigma_{t}\epsilon_{t}, \hspace{15pt} \epsilon_{t} \sim N(0,1) $$
+where $$\sigma_{t}^{2} = \a_0 + \sum_{i=1}^{p} \beta_i \sigma_{t-i}^{2} + \sum_{j=1}^{q} \a_j X_{t-j}^{2}$$
+
+For the purposes of this talk, we'll focus on GARCH(1,1) models where $\sigma_{t}^{2} = \a_0 + \beta_1 \sigma_{t-1}^{2} + \a_1 X_{t-1}^{2}$
 \end{frame}
 
 \section{Normalizing and Variance Stabilizing (NoVaS) Transformation}
@@ -263,7 +293,7 @@ Talk about the conditions under which you can actually predict $sigma^2$, plot t
 
 \begin{frame}
 \frametitle{RV(t+1)-IV(t)}
-Outline strategy that if RV(t+1)-IV(t) > 0 you buy VXX and vice versa.
+Outline strategy that if RV(t+1)-IV(t) $>$ 0 you buy VXX and vice versa.
 \end{frame}
 
 \begin{frame}
