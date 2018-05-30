@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.5.25)  30 MAY 2018 01:31
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.5.25)  30 MAY 2018 01:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1266,11 +1266,29 @@ Overfull \vbox (17.3862pt too high) detected at line 219
 
 [19
 
-] [20
+]
+File: novas_btc_returns.png Graphic file (type QTm)
+ <use  "novas_btc_returns.png" >
+Overfull \vbox (19.53758pt too high) detected at line 227
+ []
 
-] [21
+[20
 
-] [22
+]
+File: novas_btc_returns_hist.png Graphic file (type QTm)
+ <use  "novas_btc_returns_hist.png" >
+Overfull \vbox (17.15611pt too high) detected at line 235
+ []
+
+[21
+
+]
+File: novas_btc_returns_qqplot.png Graphic file (type QTm)
+ <use  "novas_btc_returns_qqplot.png" >
+Overfull \vbox (19.33873pt too high) detected at line 243
+ []
+
+[22
 
 ] [23
 
@@ -1285,10 +1303,10 @@ Overfull \vbox (17.3862pt too high) detected at line 219
 ] [28
 
 ]
-./volatility.tex:270: Misplaced alignment tab character &.
+./volatility.tex:279: Misplaced alignment tab character &.
 \insertframetitle ->{S&
                        P500 not perfect tranform with NoVaS\ifnum \beamer@au...
-l.270 \end{frame}
+l.279 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1308,10 +1326,10 @@ c) [30
 ] [32
 
 ]
-./volatility.tex:297: Misplaced alignment tab character &.
+./volatility.tex:306: Misplaced alignment tab character &.
 \insertframetitle ->{Infinite Kurtosis Plot S&
                                               P500\ifnum \beamer@autobreakco...
-l.297 \end{frame}
+l.306 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1329,10 +1347,10 @@ might try typing `S' now just to see what is salvageable.
 ] [36
 
 ]
-./volatility.tex:318: Misplaced alignment tab character &.
+./volatility.tex:327: Misplaced alignment tab character &.
 \beamer@doifinframe ...diction} Plot predicting S&
                                                   P500 Feb 2018 Volatility s...
-l.318 \end{frame}
+l.327 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1341,10 +1359,10 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-./volatility.tex:318: Misplaced alignment tab character &.
+./volatility.tex:327: Misplaced alignment tab character &.
 \insertframetitle ->{S&
                        P500 Feb 2018 One Step Ahead Prediction\ifnum \beamer...
-l.318 \end{frame}
+l.327 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1375,25 +1393,25 @@ c) [38
 \tf@snm=\write8
 \openout8 = `volatility.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 342.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 351.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 351.
 
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/.texpadtmp/volatility.au
 x)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 342.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 342.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 351.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 351.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 342.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 351.
  ) 
 Here is how much of TeX's memory you used:
- 21820 strings out of 493734
- 393438 string characters out of 6146348
+ 21826 strings out of 493734
+ 393588 string characters out of 6146348
  450413 words of memory out of 5000000
- 24690 multiletter control sequences out of 15000+600000
+ 24693 multiletter control sequences out of 15000+600000
  27392 words of font info for 86 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  56i,11n,55p,422b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
