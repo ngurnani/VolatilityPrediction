@@ -2,4 +2,4 @@
 \beamer@sectionintoc {1}{What is Volatility?}{3}{0}{1}
 \beamer@sectionintoc {2}{Normalizing and Variance Stabilizing (NoVaS) Transformation}{9}{0}{2}
 \beamer@sectionintoc {3}{Volatility Prediction}{30}{0}{3}
-\beamer@sectionintoc {4}{A Simple Volatility Trading Strategy}{37}{0}{4}
+\beamer@sectionintoc {4}{A Simple Volatility Trading Strategy}{41}{0}{4}

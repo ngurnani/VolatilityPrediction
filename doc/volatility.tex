@@ -96,7 +96,7 @@ In particular, the return series displays the following distinctive behavior:
 \end{frame}
 
 \begin{frame}
-\frametitle{S&P500 Daily Returns (1950-2018)}
+\frametitle{S\&P500 Daily Returns (1950-2018)}
 \begin{figure}[h!]
 \centering 
 \includegraphics[width=\textwidth]{sp500_returns.png}
@@ -145,7 +145,7 @@ Algorithm for Simple NoVaS:
 
 %% S&P 500 %%
 \begin{frame}
-\frametitle{S&P500 Daily Returns (1950-2018)}
+\frametitle{S\&P500 Daily Returns (1950-2018)}
 \begin{figure}[h!]
 \centering 
 \includegraphics[width=\textwidth]{sp500_returns.png}
@@ -153,7 +153,7 @@ Algorithm for Simple NoVaS:
 \end{frame}
 
 \begin{frame}
-\frametitle{S&P500 Daily Returns Histogram}
+\frametitle{S\&P500 Daily Returns Histogram}
 \begin{figure}[h!]
 \centering 
 \includegraphics[width=\textwidth]{sp500_returns_hist.png}
@@ -161,7 +161,7 @@ Algorithm for Simple NoVaS:
 \end{frame}
 
 \begin{frame}
-\frametitle{S&P500 Daily Returns Q-Q Plot}
+\frametitle{S\&P500 Daily Returns Q-Q Plot}
 \begin{figure}[h!]
 \centering 
 \includegraphics[width=\textwidth]{sp500_returns_qqplot.png}
@@ -169,7 +169,7 @@ Algorithm for Simple NoVaS:
 \end{frame}
 
 \begin{frame}
-\frametitle{NoVaS Transformed S&P500 Daily Returns (p=16)}
+\frametitle{NoVaS Transformed S\&P500 Daily Returns (p=16)}
 \begin{figure}[h!]
 \centering 
 \includegraphics[width=\textwidth]{novas_sp500_returns.png}
@@ -177,14 +177,14 @@ Algorithm for Simple NoVaS:
 \end{frame}
 
 \begin{frame}
-\frametitle{NoVaS Transformed S&P500 Histogram (p=16)}
+\frametitle{NoVaS Transformed S\&P500 Histogram (p=16)}
 \begin{figure}[h!]
 \includegraphics[width=\textwidth]{novas_sp500_returns_hist.png}
 \end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{NoVaS Transformed S&P500 QQ-Plot (p=16)}
+\frametitle{NoVaS Transformed S\&P500 QQ-Plot (p=16)}
 \begin{figure}[h!]
 \includegraphics[width=\textwidth]{novas_sp500_returns_qqplot.png}
 \end{figure}
@@ -343,7 +343,7 @@ Algorithm for Simple NoVaS:
 \end{frame}
 
 \begin{frame}
-\frametitle{Empirical Kurtosis Plot S&P500}
+\frametitle{Empirical Kurtosis Plot S\&P500}
 \begin{figure}[h!]
 \includegraphics[width=\textwidth]{sp500_returns_kurtosis.png}
 \end{figure}
@@ -354,40 +354,98 @@ Algorithm for Simple NoVaS:
 \begin{figure}[h!]
 \includegraphics[width=\textwidth]{btc_returns_kurtosis.png}
 \end{figure}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{GARCH(1,1) Prediction}
+
+Recall the GARCH(1,1) model can be expressed as: $$X_t = \sigma_{t}\epsilon_{t}, \hspace{15pt} \epsilon_{t} \sim N(0,1)$$ where $\sigma_{t}^{2} = \a_0 + \beta_1 \sigma_{t-1}^{2} + \a_1 X_{t-1}^{2}$\\
+
+\vspace{6pt}
+
+To perform one-step ahead prediction with GARCH(1,1) we:
+\begin{itemize}
+\item{Estimate the parameters $\a_0, \beta_1$ and $\a_1$ using MLE}
+\item{Let $a=\frac{\a_0}{1-\beta_1}$ and $a_i = \a_1\beta_1^{i-1}$ for $i=1,2,\dots$}
+\end{itemize}
+\vspace{6pt}
+Then the $L_1$-optimal GARCH(1,1) predictor of $X_{n+1}^2$ is given by
+$$ Median(X_{n+1}^2| \mathfrak{F_{n}}) = (a + \sum_{i=1}^{p} a_i X_{n+1-i}^2)Median(\epsilon_{n+1}^2) $$
+
+%where we choose a very large choice for p to account for equivalence of GARCH(1,1) and ARCH($\infty$)
 
 \end{frame}
 
 
+
 \begin{frame}
-\frametitle{Prediction Intervals}
-INCLUDE PREDICTION EQUATION FOR NOVAS AND GARCH
+\frametitle{Special Case: Uncorrelated NoVaS Series $W_{t,a}$}
+\begin{figure}[h!]
+\includegraphics[width=\textwidth]{novas_sp500_returns_acf.png}
+\end{figure}
+\end{frame}
 
-Steps for deriving prediction intervals - same for GARCH and NoVaS
+
+\begin{frame}
+\frametitle{NoVaS Prediction in Special Case}
+From the ACF plot on the previous slide, we can conclude that the NoVaS transformed series $\{W_{t,a}\}$ of the S\&P500 returns appears to be uncorrelated.\\
+
+\vspace{5pt}
+
+As a result we can predict $X_{n+1}^2$ (under $L_1$ loss) by
+
+$$ X_{n+1}^2 = \widehat{\mu_2}A_{n}^2 $$
+
+where
+
+$$ \widehat{\mu_2} = median \{ \frac{W_{t,a}^2}{1-a_0W_{t,a}^2} ; t = p+1, p+2, \dots, n\} $$
+
+and
+
+$$ A_{n}^2 = \alpha s^2_{t-1} + \sum_{i=1}^{p} a_i X^2_{t+1-i} $$
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Bootstrap Prediction Intervals}
+In addition to calculating point estimates, we calculate prediction intervals.\\
+\vspace{5pt}
+Below is an outline of the procedure used for NoVaS (GARCH is almost identical):
 
 \begin{enumerate}
-\item{Use simple NoVaS to obtain transformed data $\{W_{t,a}$ for $t=p+1,\dots,n \}$ that are assumed to be approximately i.i.d. Let $p, \alpha$ and $a_i$ denote the fitted NoVaS parameters}
-\item{Calculate $\widehat{g(Y_{n+1})}$ the point predictor of $g(y_{n+1})$ as the median of the set etc.}
-
-\item{Main Bootstrap Loop}
-\begin{enumerate}
-\item{Resample randomly (with replacement) the transformed variables  $\{W_{t,a}$ for $t=p+1,\dots,n \}$ to create the pseudo-data $W_{p+1}^*,\dots, W_{n-1}^*, W_{n}^*$ and $W_{n+1}^*$}
-\item{Let $(Y_{1}^*,\dots,Y_{p}^*)' = (Y_{1+I}^*,\dots,Y_{p+I}^*)'$ where I is generated as a discrete random variable uniform on the values $0,1,\dots,n-p$}
-\item{Generate the bootstrap pseudo-data $Y_{t}^*$ for $t=p+1,\dots,n$ using equation (10.17) $$ Y_{t}^* = \frac{W_{t}}{\sqrt{1-a_0W_{t}^{*2}}}\sqrt{\sum_{i=1}^{p} a_iY_{t-i}^{*2}}$$ for $t=p+1,\dots,n$}
-\item{Based on the bootstrap data $Y_{1}^*,\dots,Y_{n}^*$ re-estimate the NoVaS transformation, then calculate the bootstrap predictor $\widehat{g(Y_{n+1}^*)}$ as the median of the set}
-\item{Calculate the bootstrap future value $Y_{n+1}^*$}
-\item{Calculate the bootstrap root: $g(Y_{n+1}^*) - \widehat{g(Y_{n+1}^*)}$}
+\item{Use Simple NoVaS to obtain transformation $\{W_{t,a}\}$ and fitted parameter $p$}
+\item{Calculate $\widehat{g(X_{n+1})}$ the point predictor of $g(X_{n+1})$}
+\item{Resample randomly (with replacement) the transformed variables  $\{W_{t,a}\}$ for $t=p+1,\dots,n$ to create the pseudo-data $W_{p+1}^*,\dots, W_{n-1}^*, W_{n}^*$ and $W_{n+1}^*$}
+\item{Let $(X_{1}^*,\dots,X_{p}^*)' = (X_{1+I}^*,\dots,X_{p+I}^*)'$ where I $\sim \mathfrakk{U}\{0,n-p\}$}
+\seti
 \end{enumerate}
 
-\item{Repeat step 3 above B times the B bootstrap root replicates are collected in the form of an empirical distribution whose $\alpha$-quantile is denoted $q(\alpha)$}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bootstrap Prediction Intervals}
+\begin{enumerate}
+\conti
+\item{Generate the bootstrap pseudo-data $Y_{t}^*$ for $t=p+1,\dots,n$}
+% using equation (10.17) $$ Y_{t}^* = \frac{W_{t}}{\sqrt{1-a_0W_{t}^{*2}}}\sqrt{\sum_{i=1}^{p} a_iY_{t-i}^{*2}}$$ for $t=p+1,\dots,n$}
+\item{Based on the bootstrap data $Y_{1}^*,\dots,Y_{n}^*$ re-estimate the NoVaS transformation, then calculate the bootstrap predictor $\widehat{g(Y_{n+1}^*)}$}
+\item{Calculate the bootstrap future value $Y_{n+1}^*$ and the bootstrap root: $g(Y_{n+1}^*) - \widehat{g(Y_{n+1}^*)}$}
+\item{Repeat steps 3-7 B times - the B bootstrap root replicates are collected in the form of an empirical distribution whose $\alpha$-quantile is denoted $q(\alpha)$}
 \item{The $(1-\alpha)100\%$ equal-tailed prediction interval for $g(Y_{n+1})$ is given by $$ [\widehat{g(Y_{n+1})} + q(\alpha/2), \widehat{g(Y_{n+1})} + q(1-\alpha/2)] $$}
 
 \end{enumerate}
 \end{frame}
 
+
+
+
+
 \begin{frame}
-\frametitle{S&P500 Feb 2018 One Step Ahead Prediction}
-Plot predicting S&P500 Feb 2018 Volatility spike, along with prediction intervals
-Shows that Simple NoVaS is better than GARCH(1,1)
+\frametitle{S\&P500 Feb 2018 One Step Ahead Prediction}
+Plot predicting S\&P500 Feb 2018 Volatility spike, along with prediction intervals
+
 \end{frame}
 
 \section{A Simple Volatility Trading Strategy}
@@ -398,32 +456,44 @@ Shows that Simple NoVaS is better than GARCH(1,1)
 \end{frame}
 
 \begin{frame}
-\frametitle{Estimating the volatility $\mathbb{E}(Y_{n+1}^2|\mathfrak{F_n})$
+\frametitle{Estimating the volatility $\mathbb{E}(X_{n+1}^2|\mathfrak{F_n})$
 }
 
-Under case I, i.e. after empirically showing that the $W_{t,a}$ variables are (approximately) uncorrelated and hence independent, it is straightforward to construct a Model-free estimate of the conditional expectation $\mathbb{E}(Y_{n+1}^2|\mathfrak{F_{n}})$.
+In order to implement our volatility trading strategy we'd ideally like an estimate of $\mathbb{E}(X_{n+1}^2|\mathfrak{F_{n}})$. \\
 
+\vspace{5pt}
 
-$$\mathbb{E}(Y_{n+1}^2|\mathfrak{F_{n}}) = A_{n}^2 \mathbb{E} \bigg( \frac{W_{t,a}^2}{1-a_0 W_{t,a}^2} \bigg) $$
+Fortunately, it is straightforward to do so under the case were the NoVaS series $W_{t,a}$ is uncorrelated and independent.
 
-a natural estimate thereof is
+$$\mathbb{E}(X_{n+1}^2|\mathfrak{F_{n}}) = A_{n}^2 \mathbb{E} \bigg( \frac{W_{t,a}^2}{1-a_0 W_{t,a}^2} \bigg) $$
+
+a natural estimate is therefore
 
 $$ \frac{A_{n}^2}{n-p} \sum_{t=p+1}^{n} \bigg( \frac{W_{t,a}^2}{1-a_0 W_{t,a}^2} \bigg) $$
 
-Talk about the conditions under which you can actually predict $sigma^2$, plot the ACF to confirm that transformed series is uncorrelated and independent.
 \end{frame}
 
 \begin{frame}
-\frametitle{RV(t+1)-IV(t)}
-We consider a very simple volatility trading strategy found in Ahmad & Wilmott (2005)
-
-Strategy:
+\frametitle{Volatility Trading Strategy (Ahmad \& Wilmott 2005)}
+\vspace{-2pt}
+Relevant Definitions:
 \begin{itemize}
-\item{If RV(t+1) - VIX(t) $>$ 0 then BUY VXX. Vice Versa.}
-\item{RV(t+1) is the GARCH or NoVaS predicted realized volatility for next period}
+\item{Implied Volatility (IV) - value calculated from an option price}
+\vspace{2pt}
+\item{VIX - popular index which is a measure of the stock market's expectation volatility implied by S\&P500 index options}
+\vspace{2pt}
+\item{VIX(t) = IV(t) current implied volatility}
+\vspace{2pt}
+\item{VXX - ETN that (imperfectly) tracks VIX index}
+\vspace{2pt}
+\item{RV(t+1) - is the GARCH or NoVaS predicted realized volatility for next period}
+\vspace{2pt}
 \item{Expect RV(t+1) to be better predictor of VIX(t+1) than VIX(t)}
-\item{VIX(t) = IV(t) is the current implied volatility}
 \end{itemize}
+\vspace{2pt}
+Strategy:\\
+\vspace{2pt}
+\hspace{10pt}\textbf{If RV(t+1) - VIX(t) $>$ 0 then BUY VXX. Vice Versa}
 \end{frame}
 
 \begin{frame}
