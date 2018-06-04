@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.5.25)  31 MAY 2018 01:52
+This is XeTeX, Version 3.14159265-2.6-0.99991 (TeX Live 2014) (preloaded format=xelatex 2014.5.25)  4 JUN 2018 11:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1300,7 +1300,9 @@ and I'll forget about whatever was undefined.
 
 ] [39
 
-] [40
+]
+File: prediction.pdf Graphic file (type QTm)
+ <use  "prediction.pdf" > [40
 
 ]
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/.texpadtmp/volatility.to
@@ -1310,7 +1312,9 @@ c) [41
 
 ] [43
 
-] [44
+]
+File: vol_strat.png Graphic file (type QTm)
+ <use  "vol_strat.png" > [44
 
 ]
 \tf@nav=\write6
@@ -1322,25 +1326,25 @@ c) [41
 \tf@snm=\write8
 \openout8 = `volatility.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 504.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 504.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 509.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 509.
 
 (/Users/ngurnani/Dropbox/Code/VolatilityPrediction/doc/.texpadtmp/volatility.au
 x)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 504.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 504.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 509.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 509.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 504.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 509.
  ) 
 Here is how much of TeX's memory you used:
- 21872 strings out of 493734
- 394453 string characters out of 6146348
- 451413 words of memory out of 5000000
- 24722 multiletter control sequences out of 15000+600000
+ 21876 strings out of 493734
+ 394507 string characters out of 6146348
+ 451414 words of memory out of 5000000
+ 24724 multiletter control sequences out of 15000+600000
  29338 words of font info for 94 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  56i,11n,55p,422b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
